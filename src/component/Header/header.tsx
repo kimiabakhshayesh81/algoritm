@@ -3,6 +3,7 @@ import Image from "next/image"
 import logo from './../../../public/cropped-Logo-New01 1.png'
 import { Menu, X } from 'lucide-react'
 import { useState } from "react"
+import Link from "next/link"
 
        
 export default function Header(){
@@ -41,12 +42,13 @@ export default function Header(){
           md:static md:translate-x-0 md:h-auto md:w-auto md:bg-transparent md:shadow-none`}
       >
         <ul className="flex flex-col md:flex-row gap-8 p-6 md:p-0 md:gap-6 text-right">
-            <li><a href="#" className="text-gray-700 md:text-white hover:text-blue-500">خانه</a></li>
-            <li><a href="#" className="text-gray-700 md:text-white hover:text-blue-500">درباره ما</a></li>
-            <li><a href="#" className="text-gray-700 md:text-white hover:text-blue-500">خدمات ما</a></li>
-            <li><a href="#" className="text-gray-700 md:text-white hover:text-blue-500">همکاران ما</a></li>
-            <li><a href="#" className="text-gray-700 md:text-white hover:text-blue-500">فرصت های شغلی</a></li>
-            <li><a href="#" className="text-gray-700 md:text-white hover:text-blue-500">تماس با ما</a></li>
+            <li><Link href="./" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">خانه</Link></li>
+            <li><Link href="./about" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">درباره ما</Link></li>
+             <li><Link href="./service" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">خدمات ما</Link></li>
+            <li><Link href="./colleagues" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">همکاران ما</Link></li>
+            <li><Link href="#" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">فرصت های شغلی</Link></li>
+            <li><Link href="./news" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">اخبار و مقالات</Link></li>
+            <li><Link href="./contact" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">تماس با ما</Link></li>  
         </ul>
       </nav>
     </header>
