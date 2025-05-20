@@ -12,7 +12,31 @@ import News from '@/component/News/news';
 import saderatPic from './../../public/sadbank.png'
 import newsPic from './../../public/news.png'
 
+ // app/page.tsx
+// export const metadata = {
+//   title: "الگوریتم | پیشگام در هوش مصنوعی",
+//   description: "شرکت الگوریتم در زمینه داده و هوش مصنوعی فعالیت دارد. نوآوری، تخصص و تعهد از اصول ماست.",
+//   openGraph: {
+//     title: "شرکت الگوریتم",
+//     description: "تحول دیجیتال با هوش مصنوعی",
+//     url: "https://algorithm.co",
+//     siteName: "الگوریتم",
+//     images: [
+//       {
+//         url: "/logo.png",
+//         width: 800,
+//         height: 600,
+//         alt: "الگوریتم لوگو",
+//       },
+//     ],
+//     locale: "fa_IR",
+//     type: "website",
+//   },
+// };
+
 export default function Home() {
+ 
+
   return(
     <div>
       <SimpleSlider/>
@@ -37,7 +61,7 @@ export default function Home() {
             </div> 
         </section>
 
-        <section className='Service pt-3'>
+        <section className='Service pt-8'>
           <div>
             <h2 className='font-bold text-xl text-black pb-1'>خدمات ما</h2>
             <div className="flex justify-end items-center mb-5">
@@ -51,7 +75,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='Algoritm pt-3'>
+        <section className='Algoritm pt-8'>
           <div >
             <h2 className='font-bold text-xl text-black pb-1'>چراالگوریتم</h2>
             <div className="flex justify-end items-center mb-5">
@@ -65,7 +89,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className=' flex flex-col gap-8 pt-6'>
+          <div className=' flex flex-col gap-8 pt-8'>
             <div className=' flex flex-row-reverse gap-4'>
                 <div className="w-10 h-10 rounded-full bg-[#6FABC2] flex items-center justify-center text-white shadow-md min-w-[2.5rem] min-h-[2.5rem] shrink-0">
                 <Check size={22} /> 
@@ -103,7 +127,7 @@ export default function Home() {
         </section>
 
 
-        <section className='News pt-6'>
+        <section className='News pt-8'>
 
           <h3 className="font-bold text-xl text-black pb-1 ">اخبار و تازه ها</h3>
             <div className="flex justify-end items-center mb-5">
@@ -112,8 +136,8 @@ export default function Home() {
             </div>
 
             <div className=' gap-10'>
-              <News img={saderatPic}/>
-              <News img={saderatPic}/>
+              <News img={saderatPic} />
+              <News img={newsPic}/>
             </div>
           
         </section>

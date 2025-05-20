@@ -11,7 +11,7 @@ function News({img}){
 
               <div className='NewsCart bg-gray-100 w-full h-auto rounded-[10px] '>
                 <div className='ImgCart flex justify-center items-center w-full p-3'>
-                  <Image src={img} alt='' className=' rounded-[10px] object-cover w-[90%] '/>
+                  <Image src={img} alt='بانک صادرات' className=' rounded-[10px] object-cover w-[90%] '/>
                 </div>
 
                 <div className='InfoNews p-2'>
