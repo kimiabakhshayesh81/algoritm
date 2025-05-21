@@ -5,6 +5,7 @@ import GoalPic from './../../../public/goals.png'
 import AchivePic from './../../../public/achivment.png'
 import HistoryPic from './../../../public/history.png'
 import CompanyHistoryTimeline from '@/component/History/history'
+import Btn from '@/component/Button/button'
 
 function About(){
     return(
@@ -39,7 +40,7 @@ function About(){
                     />
                 </div>
 
-                <section>
+                <section className=' Goals'>
                     <div className=' flex flex-col w-full gap-2 justify-center items-center py-6'>
                         <h2 className=' font-bold font-mono text-2xl'>چشم انداز ما</h2>
                         <hr className=' w-[40%] border-t bg-[#6FABC2] h-1 border-none '/>
@@ -67,8 +68,8 @@ function About(){
                 </div>
 
                 <section>
-                    <div className=' flex flex-col w-full gap-2 justify-center items-center py-6'>
-                        <h2 className=' font-bold font-mono text-2xl'>دستاورد ها و افتخارات</h2>
+                    <div className='Performance flex flex-col w-full gap-2 justify-center items-center py-6'>
+                        <h3 className=' font-bold font-mono text-2xl'>دستاورد ها و افتخارات</h3>
                         <hr className=' w-[50%] border-t bg-[#6FABC2] h-1 border-none '/>
                     </div>
                     <div dir='rtl' className='pt-6 px-3 flex flex-col gap-2'>
@@ -95,14 +96,27 @@ function About(){
                     />
                 </div>
 
-                <section>
+                <section className=' History'>
                     <div className=' flex flex-col w-full gap-2 justify-center items-center py-6'>
-                        <h2 className=' font-bold font-mono text-2xl'>یک شرکت جوان با میراث غنی</h2>
+                        <h4 className=' font-bold font-mono text-2xl'>یک شرکت جوان با میراث غنی</h4>
                         <hr className=' w-[70%] border-t bg-[#6FABC2] h-1 border-none '/>
 
                         <div>
                             <CompanyHistoryTimeline/>
                         </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <div className=' flex flex-col w-full gap-2 justify-center items-center py-6'>
+                        <h5 className=' font-bold font-mono text-2xl'>دعوت به تعامل</h5>
+                        <hr className=' w-[40%] border-t bg-[#6FABC2] h-1 border-none '/>
+                    </div>
+
+                    <div dir='rtl' className='  w-full flex flex-col justify-center items-center gap-2'>
+                        <p className='text-right w-[90%]'>خوشحال میشویم بیشتر با شما در ارتباط باشیم. اگر سوالی دارید با ما تماس بگیرید.</p>
+                        <Btn href='./contact' > ارتباط با ما</Btn>
                     </div>
                 </section>
 

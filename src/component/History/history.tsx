@@ -41,73 +41,6 @@ export default function CompanyHistoryTimeline() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const items = [
-//     {
-//       year: "۱۴۰۲",
-//       title: "تأسیس شرکت",
-//       description: "آغاز به کار با تمرکز بر داده و هوش مصنوعی در بانکداری.",
-//     },
-//     {
-//       year: "۱۴۰۳",
-//       title: "توسعه محصولات",
-//       description: "تولید سامانه‌های تحلیل داده، ریسک و اتوماسیون مالی.",
-//     },
-//     {
-//       year: "۱۴۰۴",
-//       title: "گسترش بازار",
-//       description: "افزایش همکاری با بانک‌ها و شرکت‌های فناوری مالی.",
-//     },
-//     {
-//       year: "آینده",
-//       title: "چشم‌انداز",
-//       description: "رهبری بازار هوش مصنوعی بانکی در سطح منطقه.",
-//     },
-//   ];
-
-//   return (
-//     <section className="w-full py-10 px-4 bg-white" dir="rtl">
-//       <h2 className="text-2xl font-bold text-center mb-8 text-[#2c3e50]">تاریخچه شرکت</h2>
-//       <div className="relative max-w-2xl mx-auto">
-//         {items.map((item, index) => (
-//           <div key={index} className={`mb-10 flex ${index % 2 === 0 ? "flex-row-reverse" : "flex-row"} items-center`}>
-//             <div className="w-1/2 px-4">
-//               <div className="bg-[#f0f4f8] rounded-xl shadow-lg p-4">
-//                 <h3 className="font-bold text-[#6FABC2]">{item.year}</h3>
-//                 <h4 className="text-sm font-semibold">{item.title}</h4>
-//                 <p className="text-xs mt-2 text-gray-600 text-justify">{item.description}</p>
-//               </div>
-//             </div>
-//             <div className="w-0.5 h-full bg-[#6FABC2] mx-2" />
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-
-
-
-
-
-
-
-
-
-
-
   const items = [
     {
       year: "۱۴۰۲",
@@ -143,13 +76,6 @@ export default function CompanyHistoryTimeline() {
       </div>
     </section>
   );
-
-
-
-
-
-
-
 
 
 
