@@ -1,8 +1,13 @@
+'use client'
+
 import Image from "next/image"
 import Banking from './../../../public/banking.png'
 import Data from './../../../public/dataTeck.png'
 import Lend from './../../../public/lendTeck.png'
 import Reg from './../../../public/regTeck.png'
+import 'flowbite';
+import Accordion from "@/component/Accordion/Accordion"
+
 
 
 function Service(){
@@ -17,11 +22,10 @@ function Service(){
                         </div>
 
                     </div>
-                    <div dir="rtl" className="p-3 items-center justify-center flex flex-col gap-2">
+                    <div dir="rtl" className="p-3 flex flex-col items-center justify-center text-center gap-2 mt-3">
                         <h2 className=" font-semibold text-lg">قدرت داده، دقت هوش مصنوعی؛ خدماتی برای آینده بانکداری...</h2>
                         <p>در شرکت الگوریتم، ما خدماتی ارائه می‌دهیم که تصمیم‌سازی مالی را هوشمند، فرآیندها را خودکار و امنیت را تضمین می‌کند.</p>
                     </div>
-
 
 
             </header>
@@ -29,7 +33,7 @@ function Service(){
            
 
             <body className="w-full">
-                <section className="Banck flex flex-row-reverse">
+                <section className="Banck flex flex-row-reverse pt-7">
 
                     <div className="Right w-[60%]">
                         <div className="Title">
@@ -55,21 +59,32 @@ function Service(){
                         <Image src={Banking} className="pt-24 w-44 h-60 p-3" alt="banking"/>
                         <p className=" flex justify-center items-center font-semibold">BankTech</p>
                     </div>
-
-                    
+  
                 </section>
 
-                    {/* <div>
-                        <ul>
-                            <li>داشبورد بانک داری هوشمند</li>
-                            <li>بانکداری اجتماعی</li>
-                            <li>نئوبانک تخصصی</li>
-                            <li>آکادمی بانکداری</li>
-                        </ul>
-                    </div> */}
+
+                    <div className="w-full grid grid-cols-2 gap-y-4 gap-x-8 p-4 text-right">
+                        <div className="flex flex-row-reverse gap-1.5 items-start">
+                            <span className="w-2 h-2 mt-2 rounded-full bg-[#000446] "></span>
+                            <span>داشبورد بانک داری هوشمند</span>
+                        </div>
+                        <div className="flex flex-row-reverse gap-1.5 items-start">
+                            <span className="w-2 h-2 mt-2 rounded-full bg-[#000446] "></span>
+                            <span>بانکداری اجتماعی</span>
+                        </div>
+                        <div className="flex flex-row-reverse gap-1.5 items-start">
+                            <span className="w-2 h-2 mt-2 rounded-full bg-[#000446] "></span>
+                            <span>نئوبانک تخصصی</span>
+                        </div>
+                        <div className="flex flex-row-reverse gap-1.5 items-start">
+                            <span className="w-2 h-2 mt-2 rounded-full bg-[#000446]"></span>
+                            <span>آکادمی بانکداری</span>
+                        </div>
+                    </div>
 
 
-                <section className="Bank flex flex-row-reverse">
+
+                <section className="Bank flex flex-row-reverse pt-7">
                     <div className="Left w-[40%]">
                         <Image src={Data} className="pt-24 w-44 h-60 p-3" alt="banking"/>
                         <p className=" flex justify-center items-center font-semibold">DataTech</p>
@@ -78,7 +93,7 @@ function Service(){
 
                     <div className="Right w-[60%]">
                         <div className="Title">
-                            <h2 className=" font-bold text-xl text-black pb-1 p-3 text-left">فناوری داده</h2>
+                            <h3 className=" font-bold text-xl text-black pb-1 p-3 text-left">فناوری داده</h3>
                             <div className="flex justify-start items-center mb-5 text-left">
                                 <div className="w-30 h-1 rounded-s-xl bg-[#6FABC2]"></div>
                                 <div className="w-3 h-3 bg-[#6FABC2] rotate-45 -ml-1"></div>
@@ -96,14 +111,33 @@ function Service(){
                     </div>
                 </section>
 
-                <section className="Banck flex flex-row-reverse">
+                <div className="w-full grid grid-cols-2 gap-y-4 gap-x-8 p-4 text-right">
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className="w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>زیرساخت داده</span>
+                    </div>
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>مهندسی داده</span>
+                    </div>
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>مدیریت داده</span>
+                    </div>
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>تحلیل داده</span>
+                    </div>
+                </div>
+
+                <section className="Banck flex flex-row-reverse pt-7">
 
                     <div className="Right w-[60%]">
                         <div className="Title">
-                            <h2 className=" font-bold text-xl text-black pb-1 p-3 text-right">فناوری واهم دهی</h2>
+                            <h4 className=" font-bold text-xl text-black pb-1 p-3 text-right">فناوری واهم دهی</h4>
                             <div className="flex justify-end items-center mb-5">
                                 <div className="w-3 h-3 bg-[#6FABC2] rotate-45 -ml-1"></div>
-                                <div className="w-35 h-1 rounded-s-xl bg-[#6FABC2]"></div>
+                                <div className="w-36 h-1 rounded-s-xl bg-[#6FABC2]"></div>
                             </div>
                         </div>
                         <div dir="rtl" className="Desc text-right p-3 ">
@@ -126,19 +160,38 @@ function Service(){
 
                 </section>
 
+                <div className="w-full grid grid-cols-2 gap-y-4 gap-x-8 p-4 text-right">
+                    <div className=" flex flex-row-reverse whitespace-nowrap gap-1.5 items-center">
+                        <span className="w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>تامین مالی جمعی</span>
+                    </div>
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>اعتبارسنجی هوشمند</span>
+                    </div>
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>BNPL/ SNBL</span>
+                    </div>
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>اعتبارسنجی دیجیتال</span>
+                    </div>
+                </div>
 
-                <section className="Bank flex flex-row-reverse">
+
+                <section className="Bank flex flex-row-reverse pt-7">
                     <div className="Left w-[40%]">
-                        <Image src={Reg} className="pt-24 w-44 h-60 p-3" alt="banking"/>
+                        <Image src={Reg} className="pt-24 w-44 h-54 p-3" alt="banking"/>
                         <p className=" flex justify-center items-center font-semibold">RegTech</p>
                     </div>
 
 
                     <div className="Right w-[60%]">
                         <div className="Title">
-                            <h2 className=" font-bold text-xl text-black pb-1 p-3 text-left">فناوری نظارتی</h2>
+                            <h5 className=" font-bold text-xl text-black pb-1 p-3 text-left">فناوری نظارتی</h5>
                             <div className="flex justify-start items-center mb-5 text-left">
-                                <div className="w-30 h-1 rounded-s-xl bg-[#6FABC2]"></div>
+                                <div className="w-36 h-1 rounded-s-xl bg-[#6FABC2]"></div>
                                 <div className="w-3 h-3 bg-[#6FABC2] rotate-45 -ml-1"></div>
                                 
                             </div>
@@ -154,6 +207,41 @@ function Service(){
                         </div>
                     </div>
                 </section>
+
+                <div className="w-full grid grid-cols-2 gap-y-4 gap-x-8 p-4 text-right">
+                    <div className=" flex flex-row-reverse whitespace-nowrap gap-1.5 items-center">
+                        <span className="w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>نظارت هوشمند</span>
+                    </div>
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>قراردادهای هوشمند</span>
+                    </div>
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>بازرسی هوشمند</span>
+                    </div>
+                    <div className=" flex flex-row-reverse gap-1.5 items-center">
+                        <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
+                        <span>تحلیل و تفسیر مقررات</span>
+                    </div>
+                </div>
+
+
+                <section className=" pt-7">
+                    <div>
+                        <h6 className=" font-bold text-xl text-black pb-1 p-3 text-right">سوالات متداول</h6>
+                        <div className="flex justify-end items-center mb-5">
+                            <div className="w-3 h-3 bg-[#6FABC2] rotate-45 -ml-1"></div>
+                            <div className="w-35 h-1 rounded-s-xl bg-[#6FABC2]"></div>
+                        </div>
+                    </div>
+
+                    <Accordion/>
+                </section>
+
+                
+
             </body>
             
 
