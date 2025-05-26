@@ -13,14 +13,20 @@ export const metadata = {
   description: 'Created with Next.js and Tailwind CSS',
 }
 
-export default function RootLayout({ children }) {
+
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header/>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
-  )
+  );
 }

@@ -11,7 +11,7 @@ export default function Header(){
 
   return(
 
-    <header className="w-full h-20 bg-[#000446] px-4 py-2 flex justify-between items-center relative z-50">
+    <header className=" relative w-full h-20 bg-[#000446] px-4 py-2 flex justify-between items-center  z-50">
       <div className="flex gap-2 items-center">
         <Image src={logo} alt="logo" className=" h-8 w-10" />
         <p className="text-white">شرکت داده و هوش مصنوعی الگوریتم</p>
@@ -54,7 +54,4 @@ export default function Header(){
     </header>
   )
 }
-
-
-
 

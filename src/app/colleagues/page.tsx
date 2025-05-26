@@ -4,7 +4,7 @@ import PartnersSlider from "@/component/Partners/partners"
 function Colleagues(){
     return(
         <div className=" Container">
-            <div className=" pt-7">
+            <div className=" w-full pt-7">
                 <h2 className="Title font-bold text-xl text-black pb-1 p-3 text-right">همکاران ما</h2>
                 <div className="flex justify-end items-center mb-5">
                     <div className="w-3 h-3 bg-[#6FABC2] rotate-45 -ml-1"></div>

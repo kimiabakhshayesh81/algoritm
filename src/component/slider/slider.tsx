@@ -19,7 +19,7 @@ function SimpleSlider() {
   }, [])
 
   return (
-    <div className="w-full max-w-3xl mx-auto">
+    <div className="w-full max-w-3xl mx-auto ">
     
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {images.map((img, index) => (
