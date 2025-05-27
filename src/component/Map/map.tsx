@@ -15,7 +15,7 @@ const redIcon = new L.Icon({
 
 function MapComponent() {
 
-const position = [35.78617,51.42593];
+  const position = [35.78617,51.42593];
 
   return (
     <div style={{ height: '500px', width: '100%' }}>

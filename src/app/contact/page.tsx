@@ -4,7 +4,7 @@ import call from './../../../public/maincall 1.png'
 import email from './../../../public/email 1.png'
 import Link from "next/link"
 
-import MapComponent from './../../component/MapComponent/map';
+import MapComponent from '../../component/Map/map';
 
 
 function Contact(){
@@ -17,11 +17,9 @@ function Contact(){
                     <ContactCard img={location} title = 'آدرس' desc ='الهیه, خیابان مریم شرقی, پلاک 45'/>
                     <ContactCard img={call} title = 'شماره تلفن' desc ='021-32809500'/>
                     <Link href='./#'> <ContactCard img={email} title = 'ایمیل' desc ='info@algoritm.co'/> </Link> 
-
                 </div>
 
 
-                
                 <div className=" w-[95%] py-5">
                     <MapComponent/>
                 </div>
@@ -34,7 +32,6 @@ function Contact(){
                         <input className=" w-[90%] border-none bg-white h-10 p-2 rounded-[15px]" type="text" placeholder="عنوان پیام را وارد کنید"/>
                     </div>
 
-
                     <div dir="rtl" className=" flex flex-col gap-1.5 pr-5">
                         <label htmlFor="" className="text-black font-serif text-lg">متن پیام :  </label>
                         <textarea
@@ -46,11 +43,8 @@ function Contact(){
                     </div>
                 </div>  
 
-
             </div>
-
-
-           
+  
         </div>
     )
 }

@@ -44,10 +44,10 @@ export default function Header(){
         <ul className="flex flex-col md:flex-row gap-8 p-6 md:p-0 md:gap-6 text-right">
             <li><Link href="./" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">خانه</Link></li>
             <li><Link href="./about" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">درباره ما</Link></li>
-             <li><Link href="./service" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">خدمات ما</Link></li>
+            <li><Link href="./service" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">خدمات ما</Link></li>
             <li><Link href="./colleagues" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">همکاران ما</Link></li>
-            <li><Link href="#" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">فرصت های شغلی</Link></li>
             <li><Link href="./news" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">اخبار و مقالات</Link></li>
+            <li><Link href="./job" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">فرصت های شغلی</Link></li>
             <li><Link href="./contact" onClick={()=> setIsOpen(false)} className="text-gray-700 md:text-white hover:text-blue-500">تماس با ما</Link></li>  
         </ul>
       </nav>

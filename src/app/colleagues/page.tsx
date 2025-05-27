@@ -18,7 +18,6 @@ function Colleagues(){
                 
             </div>
 
-
             <div>
                 <PartnersSlider/>
             </div>

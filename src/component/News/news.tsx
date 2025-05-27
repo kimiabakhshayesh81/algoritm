@@ -1,11 +1,14 @@
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
-function News({img}){
+interface NewsProps {
+  img : string | StaticImageData
+}
+
+function News({img} : NewsProps){
     return(
        <div className='mainNews'>
-            
 
             <div className='shadow-2xl'>
 
@@ -30,8 +33,7 @@ function News({img}){
                 </div>
             </div>
 
-          </div>
-            
+          </div> 
         </div>
     )
 }
