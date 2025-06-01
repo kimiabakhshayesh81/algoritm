@@ -7,7 +7,7 @@
 //                     <hr className=' w-[45%] border-t bg-[#6FABC2] h-1 border-none '/>
 //                 </div>
 
-import JobCart from "@/component/Jobcarts/jobCarts";
+
 
 //                 <div className="w-full flex flex-col justify-center items-center gap-1.5">
 //                     <div className="w-[85%] text-right">
@@ -143,10 +143,7 @@ import JobCart from "@/component/Jobcarts/jobCarts";
 
 
 
-
-
-
-
+import JobCart from "@/component/Jobcarts/jobCarts";
 
 
 // 'use client'
@@ -179,7 +176,7 @@ function Job() {
 
         {/* Application Process */}
         <div className="bg-blue-50 rounded-3xl shadow-md p-8 md:p-12 text-right">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-4">فرآیند ارسال درخواست</h2>
+          <h3 className="text-2xl font-semibold text-blue-700 mb-4">فرآیند ارسال درخواست</h3>
           <div className="space-y-4 leading-7">
             <p>
               انتخاب موقعیت شغلی متناسب با تخصص شما، اولین قدم است. پس از آن، کافی‌ست اطلاعات خود از جمله رزومه، نمونه‌کارها و معرفی‌نامه کوتاه را برای ما ارسال کنید.
