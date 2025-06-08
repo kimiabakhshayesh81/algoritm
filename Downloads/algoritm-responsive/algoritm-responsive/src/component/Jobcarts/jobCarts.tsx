@@ -29,13 +29,22 @@ function JobCart() {
   }, [])
 
   return (
-    <div dir="rtl" className="mt-16">
+    <div dir="rtl" className="mt-16 ">
       {isMounted && (
         <Swiper
           modules={[Pagination]}
           spaceBetween={20}
           slidesPerView={1.2}
           pagination={{ el: paginationRef.current, clickable: true }}
+          // breakpoints={{
+          //     640: {
+          //       slidesPerView: 2,
+          //     },
+          //     1024: {
+          //       slidesPerView: 3,
+          //     },
+          //   }}
+
           className="pb-8"
         >
           {differentJobs.map((job, index) => (

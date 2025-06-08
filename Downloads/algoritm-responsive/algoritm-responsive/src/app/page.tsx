@@ -88,9 +88,6 @@ export default function Home() {
 
 
 
-
-
-
         <section className='Algoritm pt-8'>
           <div className='md:mr-10'>
             <h2 className='font-bold text-xl text-black pb-1 p-3'>چراالگوریتم</h2>

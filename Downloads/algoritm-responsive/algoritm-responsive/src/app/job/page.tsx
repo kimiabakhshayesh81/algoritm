@@ -150,8 +150,8 @@ import JobCart from "@/component/Jobcarts/jobCarts";
 
 function Job() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-white to-slate-50 text-gray-800" dir="rtl">
-      <section className="max-w-6xl mx-auto px-4 py-16">
+    <div className="w-full min-h-screen bg-gradient-to-b from-white to-slate-50 text-gray-800 " dir="rtl">
+      <section className="max-w-6xl mx-auto px-4 py-16 ">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-5xl font-extrabold text-blue-800 leading-tight mb-4">
@@ -164,7 +164,7 @@ function Job() {
         </div>
 
         {/* About Us */}
-        <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12 border border-blue-100 text-right">
+        <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12 border border-blue-100 text-right ">
           <h2 className="text-2xl font-semibold text-blue-700 mb-4">چرا الگوریتم؟</h2>
           <ul className="list-[\2022] pr-5 space-y-3 leading-relaxed">
             <li>فرهنگی مبتنی بر یادگیری، نوآوری و احترام متقابل</li>

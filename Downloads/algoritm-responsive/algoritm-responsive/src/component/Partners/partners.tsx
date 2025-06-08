@@ -50,12 +50,20 @@ export default function PartnersSlider() {
     <div dir="rtl" className="max-w-5xl mx-auto px-4 py-10">
       <h2 className="text-2xl font-bold mb-6 text-center">همکاران ما</h2>
 
-      <div className="relative">
+      <div className="relative ">
         <Swiper
           modules={[Pagination]}
           spaceBetween={30}
           slidesPerView={1.2}
           pagination={{ el: '.custom-pagination', clickable: true }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
           className="pb-8"
         >
           {partners.map((partner, index) => {
