@@ -164,18 +164,23 @@ function Job() {
         </div>
 
         {/* About Us */}
-        <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12 border border-blue-100 text-right ">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-4">چرا الگوریتم؟</h2>
-          <ul className="list-[\2022] pr-5 space-y-3 leading-relaxed">
-            <li>فرهنگی مبتنی بر یادگیری، نوآوری و احترام متقابل</li>
-            <li>فرصت رشد واقعی در کنار متخصصان حوزه داده و هوش مصنوعی</li>
-            <li>پروژه‌های چالش‌برانگیز با تأثیرگذاری بالا</li>
-            <li>محیطی دوستانه، حرفه‌ای و هم‌افزا</li>
-          </ul>
+        
+        <div className="md:flex md:justify-center">
+          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12 border border-blue-100 text-right md:w-[80%]">
+            <h2 className="text-2xl font-semibold text-blue-700 mb-4">چرا الگوریتم؟</h2>
+            <ul className="list-[\2022] pr-5 space-y-3 leading-relaxed">
+              <li>فرهنگی مبتنی بر یادگیری، نوآوری و احترام متقابل</li>
+              <li>فرصت رشد واقعی در کنار متخصصان حوزه داده و هوش مصنوعی</li>
+              <li>پروژه‌های چالش‌برانگیز با تأثیرگذاری بالا</li>
+              <li>محیطی دوستانه، حرفه‌ای و هم‌افزا</li>
+            </ul>
+          </div>
         </div>
 
+
         {/* Application Process */}
-        <div className="bg-blue-50 rounded-3xl shadow-md p-8 md:p-12 text-right">
+        <div className="md:flex md:justify-center">
+          <div className="bg-blue-50 rounded-3xl shadow-md p-8 md:p-12 text-right md:w-[80%]">
           <h3 className="text-2xl font-semibold text-blue-700 mb-4">فرآیند ارسال درخواست</h3>
           <div className="space-y-4 leading-7">
             <p>
@@ -190,6 +195,8 @@ function Job() {
           </div>
         </div>
 
+        </div>
+        
 
         <div>
             <JobCart/>

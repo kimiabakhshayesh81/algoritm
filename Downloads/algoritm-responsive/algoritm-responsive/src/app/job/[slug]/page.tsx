@@ -53,7 +53,8 @@ export default function JobDetailPage({ params }: { params: { slug: string } }) 
     <div className="w-full min-h-screen bg-gray-50 px-6 py-10 flex flex-col gap-10 font-sans">
 
       {/* اطلاعات شغل */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white shadow-lg rounded-xl p-6">
+      <div className="md:flex md:justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white shadow-lg rounded-xl p-6 md:w-[80%]">
         <div className="w-full flex justify-center">
           <Image src={job.img} alt='' className="rounded-lg object-contain" />
         </div>
@@ -62,11 +63,16 @@ export default function JobDetailPage({ params }: { params: { slug: string } }) 
           <p className="text-lg text-gray-600 leading-relaxed">{job.description}</p>
         </div>
       </div>
+      </div>
+      
 
       {/* فرم‌ها */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className=" md:flex md:justify-center">
+
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 md:w-[80%]">
 
         {/* آپلود رزومه */}
+        
         <div className="border bg-white p-5 rounded-2xl shadow-lg flex items-center justify-between hover:shadow-xl transition">
           <input
             type="file"
@@ -108,7 +114,9 @@ export default function JobDetailPage({ params }: { params: { slug: string } }) 
         </div>
 
         {/* درباره شما */}
-        <div className="md:col-span-2 border bg-white p-5 rounded-2xl shadow-lg flex flex-col gap-3 hover:shadow-xl transition">
+        
+
+          <div className="md:col-span-2 border bg-white p-5 rounded-2xl shadow-lg flex flex-col gap-3 hover:shadow-xl transition ">
           <div className="flex items-center justify-between">
             <span className="text-lg font-semibold text-gray-800">درباره شما</span>
             <button
@@ -131,6 +139,9 @@ export default function JobDetailPage({ params }: { params: { slug: string } }) 
         </div>
 
       </div>
+
+      </div>
+      
     </div>
   )
 }

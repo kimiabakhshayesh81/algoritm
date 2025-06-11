@@ -7,6 +7,7 @@ import Lend from '@/asset/images/lendTeck.png'
 import Reg from '@/asset/images/regTeck.png'
 import 'flowbite';
 import Accordion from "@/component/Accordion/Accordion"
+import ServiceCard from "@/component/ServiceCard/serviceCard"
 
 
 
@@ -33,7 +34,7 @@ function Service() {
 
 
             <div className="w-full">
-                <section className="Banck flex justify-center flex-row-reverse pt-7">
+                {/* <section className="Banck flex justify-center flex-row-reverse pt-7">
 
                     <div className="Right w-[60%]">
                         <div className="Title">
@@ -249,8 +250,10 @@ function Service() {
                         <span className=" w-2 h-2 rounded-full mt-2 bg-[#000446]"></span>
                         <span>تحلیل و تفسیر مقررات</span>
                     </div>
-                </div>
+                </div> */}
 
+                    <ServiceCard/>
+                    
 
                 <section className=" pt-7">
                     <div>

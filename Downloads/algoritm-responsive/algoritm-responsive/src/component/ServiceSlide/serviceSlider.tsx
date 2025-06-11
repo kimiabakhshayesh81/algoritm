@@ -197,7 +197,8 @@ import { useRouter } from 'next/navigation'
 import bankPic from '@/asset/images/bankTeck.png'
 import lendPic from '@/asset/images/download.png'
 import regPic from '@/asset/images/regTeck.png'
-import dataPic from '@/asset/images/dataTeck.png'
+// import dataPic from '@/asset/images/dataTeck.png'
+import paytech from '@/asset/images/paytech.jpg'
 
 const slides = [
   {
@@ -206,8 +207,8 @@ const slides = [
     description: 'هوش تجاری، نئوبانک، بانکداری اجتماعی...',
   },
   {
-    img: dataPic,
-    title: 'تحلیل داده‌ها',
+    img: paytech,
+    title: 'تحلیل پرداخت',
     description: 'تحلیل فرایند بانکداری',
   },
   {

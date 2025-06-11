@@ -31,43 +31,89 @@ function JobCart() {
   return (
     <div dir="rtl" className="mt-16 ">
       {isMounted && (
+        // <Swiper
+        //   modules={[Pagination]}
+        //   spaceBetween={20}
+        //   slidesPerView={1.2}
+        //   pagination={{ el: paginationRef.current, clickable: true }}
+          
+
+        //   className="pb-8"
+        // >
+
+
+
         <Swiper
-          modules={[Pagination]}
-          spaceBetween={20}
-          slidesPerView={1.2}
-          pagination={{ el: paginationRef.current, clickable: true }}
-          // breakpoints={{
-          //     640: {
-          //       slidesPerView: 2,
-          //     },
-          //     1024: {
-          //       slidesPerView: 3,
-          //     },
-          //   }}
+            modules={[Pagination]}
+            spaceBetween={20}
+            slidesPerView={1.2}
+            breakpoints={{
+    768: {
+      slidesPerView: 1.5, // در تبلت (md)
+    },
+    1024: {
+      slidesPerView: 3, // در دسکتاپ (lg)
+    },
+  }}
+            pagination={{ el: paginationRef.current, clickable: true }}
+            className="pb-8"
+          >
 
-          className="pb-8"
-        >
+
+
+
+
+  
+
           {differentJobs.map((job, index) => (
-            <SwiperSlide key={index}>
-              <div className="h-full bg-white rounded-3xl shadow-md p-6 border border-gray-200 flex flex-col items-center text-center min-h-[320px]">
-                <Image
-                  src={job.img}
-                  alt={job.title}
-                  className="w-24 h-24 object-contain mb-4"
-                />
-                <p className="text-blue-800 font-semibold text-lg mb-4">
-                  {job.title}
-                </p>
+            // <SwiperSlide key={index}>
+            //   <div className="h-full bg-white rounded-3xl shadow-md p-6 border border-gray-200 flex flex-col items-center text-center min-h-[320px] md:flex  md:w-[50%]">
+            //     <Image
+            //       src={job.img}
+            //       alt={job.title}
+            //       className="w-24 h-24 object-contain mb-4"
+            //     />
+            //     <p className="text-blue-800 font-semibold text-lg mb-4">
+            //       {job.title}
+            //     </p>
 
-                <Link href={`/job/${job.slug}`} className="mt-auto w-full">
-                  <button className="w-full px-4 py-2 bg-blue-700 text-white rounded-full text-sm hover:bg-blue-800 transition-all">
-                    مشاهده جزئیات
-                  </button>
-                </Link>
-              </div>
-            </SwiperSlide>
+            //     <Link href={`/job/${job.slug}`} className="mt-auto w-full">
+            //       <button className="w-full px-4 py-2 bg-blue-700 text-white rounded-full text-sm hover:bg-blue-800 transition-all">
+            //         مشاهده جزئیات
+            //       </button>
+            //     </Link>
+            //   </div>
+            // </SwiperSlide>
+
+
+
+
+
+
+
+
+            <SwiperSlide key={index}>
+  <div className="h-full bg-white rounded-3xl shadow-md p-6 border border-gray-200 flex flex-col items-center text-center min-h-[320px]">
+    <Image
+      src={job.img}
+      alt={job.title}
+      className="w-24 h-24 object-contain mb-4"
+    />
+    <p className="text-blue-800 font-semibold text-lg mb-4">
+      {job.title}
+    </p>
+
+    <Link href={`/job/${job.slug}`} className="mt-auto w-full">
+      <button className="w-full px-4 py-2 bg-blue-700 text-white rounded-full text-sm hover:bg-blue-800 transition-all">
+        مشاهده جزئیات
+      </button>
+    </Link>
+  </div>
+</SwiperSlide>
+
           ))}
         </Swiper>
+
       )}
 
       {/* دات‌ها خارج از کارت‌ها */}
