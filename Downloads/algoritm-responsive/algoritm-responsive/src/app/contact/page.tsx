@@ -83,7 +83,7 @@ function Contact() {
         <div className="flex flex-col gap-6 md:flex-row md:gap-6 w-full md:w-[70%] max-w-6xl">
 
           {/* اطلاعات تماس */}
-          <div className="flex flex-col gap-6 bg-[#E8E8E8] rounded-[15px] p-6 w-full md:w-1/2">
+          <div className="flex flex-col gap-6 bg-gray-100 rounded-[15px] p-6 w-full md:w-1/2">
             <h2 className="text-center font-bold text-xl text-black">راه های ارتباطی با ما</h2>
             <ContactCard img={location} title='آدرس' desc='الهیه، خیابان مریم شرقی، پلاک 45' />
             <ContactCard img={call} title='شماره تلفن' desc='021-32809500' />
@@ -101,7 +101,7 @@ function Contact() {
 
 
           {/* نقشه */}
-        <div className="bg-[#E8E8E8] rounded-[15px] p-6 w-full md:w-1/2 flex items-center justify-center">
+        <div className="bg-gray-100 rounded-[15px] p-6 w-full md:w-1/2 flex items-center justify-center">
           <div className="w-full min-h-[300px] h-[300px] md:h-full rounded-[15px] overflow-hidden">
             <MapComponent />
           </div>
@@ -110,7 +110,7 @@ function Contact() {
         </div>
 
         {/* فرم تماس با ما */}
-        <div className="w-full max-w-6xl flex flex-col md:w-[70%] gap-5 bg-[#E8E8E8] rounded-[15px] py-8 px-6">
+        <div className="w-full max-w-6xl flex flex-col md:w-[70%] gap-5 bg-gray-100 rounded-[15px] py-8 px-6">
           <h2 className="text-center font-bold text-xl text-black pb-2">با ما در ارتباط باشید</h2>
 
           <div dir="rtl" className="flex flex-col gap-1.5 pr-5">

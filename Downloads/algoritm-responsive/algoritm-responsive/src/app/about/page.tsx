@@ -72,13 +72,13 @@ function About() {
                     />
                 </div>
 
-                <section className='Goals'>
+                {/* <section className='Goals'>
                     <div className=' flex flex-col w-full gap-2 justify-center items-center py-6'>
                         <h2 className=' font-bold font-mono text-2xl'>مسیر تحقق چشم‌انداز</h2>
                         <hr className=' w-[40%] md:w-[20%] border-t bg-[#6FABC2] h-1 border-none ' />
-                    </div>
+                    </div> */}
                         
-                    <div className='md:flex md:flex-col md:items-center'>
+                    {/* <div className='md:flex md:flex-col md:items-center'>
                         <p className='font-semibold pt-4 text-right py-3 p-4'> : اهداف کلیدی شرکت شامل موارد زیر است</p>
 
                         <ul className="list-disc list-inside text-right flex flex-col gap-2 p-4 font-serif" dir="rtl">
@@ -87,9 +87,111 @@ function About() {
                             <li>پرورش و جذب نیروهای متخصص در حوزه هوش مصنوعی و فناوری‌های پیشرفته</li>
                             <li>کمک به تحول دیجیتال بانک‌ها با ارائه راهکارهای رگ‌تک (RegTech) و لندتک (LendTech)</li>
                         </ul>
+                    </div> */}
+
+
+
+
+
+                    {/* //new
+                    <div className='max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-6'>
+                        <p className='font-bold text-xl mb-4 text-right text-[#1F2937]'> : اهداف کلیدی شرکت</p>
+                        <div className="grid grid-cols-2 gap-4 text-right" dir="rtl">
+                            {[
+                            "توسعه محصولات و راهکارهای مبتنی بر داده...",
+                            "ایجاد زیرساخت‌های بومی و امن...",
+                            "پرورش و جذب نیروهای متخصص...",
+                            "کمک به تحول دیجیتال بانک‌ها..."
+                            ].map((item, i) => (
+                            <div key={i} className="bg-sky-50 hover:bg-sky-100 transition rounded-xl shadow p-4 flex items-start gap-2">
+                                <span className="text-sky-600 pt-1">📌</span>
+                                <p className="text-sm font-medium leading-relaxed">{item}</p>
+                            </div>
+                            ))}
+                        </div>
                     </div>
+
                     
-                </section>
+                </section> */}
+
+
+
+                <section className="py-12 px-6 bg-[#F9FAFB]" dir="rtl">
+                    <div className="text-center mb-10">
+                        <h2 className="text-3xl font-bold font-sans text-[#1E2A3A]">مسیر تحقق چشم‌انداز</h2>
+                        <div className="w-[40%] md:w-[20%] mx-auto mt-2  h-1 bg-[#6FABC2] rounded"></div>
+                        <p className="mt-6 text-lg font-medium text-gray-700">
+                        اهداف کلیدی شرکت شامل موارد زیر است:
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                        {[
+                        {
+                            title: "توسعه محصولات هوشمند",
+                            desc: "توسعه راهکارهای داده‌محور و یادگیری ماشین برای بهبود تصمیم‌گیری و افزایش بهره‌وری سازمانی",
+                            icon: (
+                            <svg className="w-6 h-6 text-[#2E5B9F]" fill="none" stroke="currentColor" strokeWidth="2"
+                                viewBox="0 0 24 24">
+                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+                                <path d="M13 2v7h7"/>
+                            </svg>
+                            ),
+                        },
+                        {
+                            title: "ایجاد زیرساخت امن",
+                            desc: "زیرساخت‌های بومی، پایدار و ایمن برای پردازش و تحلیل داده‌های حجیم با امنیت سازمانی",
+                            icon: (
+                            <svg className="w-6 h-6 text-[#2E5B9F]" fill="none" stroke="currentColor" strokeWidth="2"
+                                viewBox="0 0 24 24">
+                                <path d="M12 11c1.657 0 3-1.567 3-3.5S13.657 4 12 4 9 5.567 9 7.5 10.343 11 12 11z"/>
+                                <path d="M4 20v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/>
+                            </svg>
+                            ),
+                        },
+                        {
+                            title: "توسعه سرمایه انسانی",
+                            desc: "جذب و پرورش نیروهای متخصص در زمینه‌های هوش مصنوعی و فناوری‌های نوین با برنامه‌ریزی بلندمدت",
+                            icon: (
+                            <svg className="w-6 h-6 text-[#2E5B9F]" fill="none" stroke="currentColor" strokeWidth="2"
+                                viewBox="0 0 24 24">
+                                <path d="M5 20v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            ),
+                        },
+                        {
+                            title: "تحول دیجیتال در بانک‌ها",
+                            desc: "ارائه راهکارهای RegTech و LendTech برای ارتقاء فرآیندهای بانکی و دیجیتال‌سازی خدمات مالی",
+                            icon: (
+                            <svg className="w-6 h-6 text-[#2E5B9F]" fill="none" stroke="currentColor" strokeWidth="2"
+                                viewBox="0 0 24 24">
+                                <path d="M3 10h18M5 6h14M4 14h16M6 18h12"/>
+                            </svg>
+                            ),
+                        },
+                        ].map((item, i) => (
+                        <div
+                            key={i}
+                            className="bg-white rounded-xl shadow-sm border-r-4 border-[#2E5B9F] p-6 flex items-start gap-4 hover:shadow-md transition"
+                        >
+                            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#E1E8F0]">
+                            {item.icon}
+                            </div>
+                            <div className="flex-1">
+                            <h3 className="text-lg font-bold text-gray-800">{item.title}</h3>
+                            <p className="text-sm text-gray-600 mt-2 leading-relaxed">{item.desc}</p>
+                            </div>
+                        </div>
+                        ))}
+                    </div>
+                    </section>
+
+
+
+
+
+
 
 
                 <div className="flex justify-center items-center pb-4 pt-10">

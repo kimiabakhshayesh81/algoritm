@@ -52,28 +52,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className='Service pt-6 '>
-          <div className=''>
-
-            <div className='md:mr-10 mb-16'>
-              <h2 className='font-bold text-xl text-black pb-1 p-3 '>خدمات ما</h2>
-              <div className="flex justify-end items-center mb-5">
-                <div className="w-3 h-3 bg-[#6FABC2] rotate-45 -ml-1 md:hidden"></div>
-                <div className="w-30 h-1 rounded-s-xl bg-[#6FABC2]"></div>
-              </div>
-            </div>
-
-
-          </div>
-
-          <div className='sliderService w-full object-cover'>
-            <Slider />
-          </div>
-        </section> */}
-
-
-
-
 
         <section className='Service  md:px-16 py-8 bg-[#f9fafa]'>
           <div className='text-right mb-10'>

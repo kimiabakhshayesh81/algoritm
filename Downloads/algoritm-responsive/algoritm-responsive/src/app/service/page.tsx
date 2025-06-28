@@ -19,7 +19,7 @@ function Service() {
 
                     <div className="text-center flex flex-col items-center">
                         <h1 className="font-bold text-2xl text-black pb-1 p-3">خدمات ما</h1>
-                        <hr className="w-[30%] h-1 bg-[#6FABC2] border-none" />
+                        <hr className="w-[30%] h-1 bg-[#6FABC2] border-none md:w-[15%]" />
                     </div>
 
                 </div>
