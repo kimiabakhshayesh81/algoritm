@@ -12,9 +12,9 @@ function About() {
     return (
         <div className=' w-full'>
             <div className='AboutPic pb-2 '>
-                <Image src={AboutPic} alt='about' className='md:w-screen' />
+                <Image src={AboutPic} alt='about' className='md:w-screen ' />
             </div>
-            <header className=' flex flex-col justify-center items-center w-full py-8 md:py-16'>
+            {/* <header className=' flex flex-col justify-center items-center w-full py-8 md:py-16'>
                 <div className=' flex flex-col gap-2 w-full justify-center items-center'>
                     <h1 className=' font-bold font-mono text-2xl '>ما که هستیم</h1>
                     <hr className=' w-[40%] md:w-[20%] border-t bg-[#6FABC2] h-1 border-none ' />
@@ -28,7 +28,64 @@ function About() {
                     <p>. مأموریت ما، تسهیل مسیر تحول دیجیتال برای سازمان‌ها و خلق ارزش پایدار از داده‌هاست</p>
                 </div>
 
-            </header>
+            </header> */}
+
+
+
+
+<header className="w-full bg-[#f4f6f9] py-16">
+  <div className="max-w-5xl mx-auto px-4 text-center">
+
+    {/* عنوان */}
+    <h1 className="text-4xl font-bold text-[#2b2b2b] font-serif">
+      ما که هستیم
+    </h1>
+
+    {/* خط تزئینی */}
+    <div className="mt-4 mb-8 mx-auto w-32 h-1 bg-[#6FABC2] rounded"></div>
+
+    {/* کارت‌ها */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+
+      {/* کارت 2 */}
+      <div className="relative bg-white p-8 rounded-lg shadow-xl hover:scale-105 transform transition-all duration-300 ease-in-out">
+        <div className="absolute top-0 left-0 w-full h-1 bg-[#6FABC2] rounded-t-lg"></div>
+        <h3 className="text-2xl font-semibold text-[#2b2b2b] mb-4">مسیر ما در تحول دیجیتال</h3>
+        <p className="text-gray-600">
+          این شرکت، به‌عنوان یکی از پیشگامان تحول دیجیتال در صنعت مالی و بانکی کشور، تلاش می‌کند تا از طریق فناوری‌های نوین، زیرساخت‌های فناورانه‌ی بانک‌ها و سازمان‌های بزرگ را بازتعریف کند
+        </p>
+      </div>
+
+      {/* کارت 3 */}
+      <div className="relative bg-white p-8 rounded-lg shadow-xl hover:scale-105 transform transition-all duration-300 ease-in-out">
+        <div className="absolute top-0 left-0 w-full h-1 bg-[#6FABC2] rounded-t-lg"></div>
+        <h3 className="text-2xl font-semibold text-[#2b2b2b] mb-4">ماموریت ما</h3>
+        <p className="text-gray-600">
+          مأموریت ما، تسهیل مسیر تحول دیجیتال برای سازمان‌ها و خلق ارزش پایدار از داده‌هاست تا با استفاده از هوش مصنوعی و تحلیل داده‌ها، آینده‌ای روشن‌تر بسازیم
+        </p>
+      </div>
+
+       {/* کارت 1 */}
+      <div className="relative bg-white p-8 rounded-lg shadow-xl hover:scale-105 transform transition-all duration-300 ease-in-out">
+        <div className="absolute top-0 left-0 w-full h-1 bg-[#6FABC2] rounded-t-lg"></div>
+        <h3 className="text-2xl font-semibold text-[#2b2b2b] mb-4">معرفی شرکت</h3>
+        <p className="text-gray-600">
+          شرکت داده و هوش مصنوعی الگوریتم، بازوی فناورانه‌ی بانک صادرات ایران، با هدف توسعه و بومی‌سازی راهکارهای نوین در حوزه‌ی هوش مصنوعی، داده‌کاوی و تحلیل هوشمند اطلاعات تأسیس شده است
+        </p>
+      </div>
+
+    </div>  
+
+  </div>
+</header>
+
+
+
+
+
+
+
 
             <section className='Counter md:flex md:justify-around'>
                 <CounterSection />
@@ -43,7 +100,7 @@ function About() {
                     />
                 </div>
 
-                <section className=' Perspective'>
+                {/* <section className=' Perspective'>
                     <div className=' flex flex-col w-full gap-2 justify-center items-center py-6'>
                         <h2 className=' font-bold font-mono text-2xl'>چشم انداز ما</h2>
                         <hr className=' w-[40%] md:w-[20%] border-t bg-[#6FABC2] h-1 border-none ' />
@@ -53,7 +110,6 @@ function About() {
                             <p className=' text-right md:flex md:flex-col md:items-center'>چشم‌انداز ما، تبدیل‌شدن به یکی از پیشگامان صنعت هوش مصنوعی در کشور و منطقه است؛ شرکتی که با تکیه بر تخصص، نوآوری و تعهد، مرجع ارائه خدمات هوشمند در حوزه مالی و فراتر از آن باشد.</p>
                             <p className=' text-right md:flex md:flex-col md:items-center'>ما در تلاشیم الگوریتم را به نامی معتمد و شناخته‌شده در عرصه تحول دیجیتال تبدیل کنیم؛ جایی که فناوری نه‌تنها ابزار، بلکه راه‌حل خلق ارزش پایدار باشد.</p>
                             <p className=' text-right md:flex md:flex-col md:items-center'>با توسعه‌ پلتفرم‌های بومی و استفاده از داده‌های عمیق، آینده‌ای می‌سازیم که در آن تصمیم‌سازی، مبتنی بر تحلیل هوشمند و پیش‌بینی دقیق است.</p>
-                            {/* <p className=' text-right md:flex md:flex-col md:items-center'>چشم‌انداز ما، عبور از مرزهای فناوری و تبدیل‌شدن به بازیگری اثرگذار در شکل‌دهی آینده‌ی اقتصاد دیجیتال ایران است.</p>    */}
                              <p className='text-right md:flex md:flex-col md:items-center'>
                                 چشم‌انداز ما، ساخت آینده‌ای است که در آن تصمیم‌ها سریع‌تر، دقیق‌تر و هوشمندتر اتخاذ می‌شوند. 
                             </p>
@@ -61,7 +117,68 @@ function About() {
                         </div>
                     </div> 
 
-                </section>
+                </section> */}
+
+
+
+
+
+<section className="relative py-16 px-4 bg-gradient-to-br from-[#f0f4f8] to-[#dbe9f1]">
+  {/* عنوان */}
+  <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800">چشم‌انداز ما</h2>
+    <p className="mt-2 text-gray-600 text-sm md:text-base">
+      آینده‌ای که در آن فناوری و داده، ستون‌های تصمیم‌گیری و تحول‌اند
+    </p>
+  </div>
+
+  {/* کارت‌ها */}
+  <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {[
+      {
+        title: "پیشگام در هوش مصنوعی",
+        desc: "با تمرکز بر نوآوری و تخصص، الگوریتم مرجع خدمات هوشمند در کشور می‌شود.",
+      },
+      {
+        title: "فناوری بومی، راه‌حل جهانی",
+        desc: "با توسعه پلتفرم‌های بومی، الگوریتم خدمات مقیاس‌پذیر و قابل‌اعتماد ارائه می‌دهد.",
+      },
+      {
+        title: "تحلیل عمیق، تصمیم دقیق",
+        desc: "استفاده از تحلیل داده برای خلق مزیت رقابتی در صنعت مالی.",
+      },
+      {
+        title: "مرجع تحول دیجیتال",
+        desc: "با ساختار منعطف و چابک، الگوریتم شریک استراتژیک سازمان‌ها در تحول دیجیتال است.",
+      },
+      {
+        title: "خلق ارزش پایدار",
+        desc: "فناوری در خدمت ایجاد ارزش بلندمدت برای مشتریان و جامعه.",
+      },
+      {
+        title: "آینده‌نگری فناورانه",
+        desc: "ترسیم آینده‌ای هوشمندانه با بهره‌گیری از داده، تجربه و فناوری.",
+      },
+    ].map((item, i) => (
+      <div
+        key={i}
+        className="backdrop-blur-md bg-white/70 border border-white/30 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-right"
+      >
+        <h3 className="text-lg font-bold text-gray-800 mb-2">{item.title}</h3>
+        <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
 
 
                  <div className="flex justify-center items-center pb-4 pt-10">
@@ -202,7 +319,7 @@ function About() {
                     />
                 </div>
 
-                <section>
+                {/* <section>
                     <div className='Performance flex flex-col w-full gap-2 justify-center items-center py-6'>
                         <h3 className=' font-bold font-mono text-2xl'>دستاورد ها و افتخارات</h3>
                         <hr className=' w-[50%] md:w-[25%] border-t bg-[#6FABC2] h-1 border-none ' />
@@ -220,7 +337,60 @@ function About() {
                         </div>
 
                     </div>
-                </section>
+                </section> */}
+
+
+
+
+
+                    <section className="bg-white py-16 px-4">
+  <div className="flex flex-col items-center justify-center gap-2">
+    <h3 className="font-bold font-mono text-3xl text-gray-800">دستاوردها و افتخارات</h3>
+    <hr className="w-32 md:w-48 border-t-4 border-[#6FABC2] rounded-full mt-2" />
+  </div>
+
+  <div dir="rtl" className="mt-10 max-w-5xl mx-auto text-right">
+    <p className="text-gray-700 text-lg leading-loose px-2 md:px-10">
+      شرکت الگوریتم با بهره‌گیری از فناوری‌های نوین هوش مصنوعی و داده‌کاوی، گام‌های مؤثری در تحول دیجیتال صنعت بانکداری برداشته است. 
+      <br />
+      <strong className="text-[#0e7490]">برخی از مهم‌ترین دستاوردها و افتخارات این شرکت عبارت‌اند از:</strong>
+    </p>
+
+    <div className="grid md:grid-cols-2 gap-6 mt-10 px-2 md:px-10">
+      {[
+        {
+          title: "اتوماسیون فرآیندهای بانکی",
+          desc: "بهبود بهره‌وری با استفاده از فناوری‌های هوشمند در عملیات بانکی.",
+        },
+        {
+          title: "ارائه دستیارهای مجازی",
+          desc: "افزایش کیفیت خدمات با پیاده‌سازی چت‌بات‌ها و پاسخ‌گوی هوشمند.",
+        },
+        {
+          title: "توسعه نرم‌افزارهای بومی",
+          desc: "تمرکز بر امنیت داده و طراحی راهکارهای مبتنی بر حریم خصوصی.",
+        },
+        {
+          title: "تحلیل رفتار مشتریان",
+          desc: "مدل‌سازی ریسک اعتباری و پیش‌بینی رفتار جهت تسهیل تصمیم‌گیری.",
+        },
+      ].map((item, index) => (
+        <div key={index} className="bg-[#f9fbfc] border border-gray-200 rounded-xl p-6 hover:shadow transition">
+          <h4 className="text-base font-semibold text-gray-800 mb-2">{item.title}</h4>
+          <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
 
 
                 <div className="flex justify-center items-center pb-4 pt-10">

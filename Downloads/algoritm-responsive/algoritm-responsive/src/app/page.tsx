@@ -13,6 +13,10 @@ import 'leaflet/dist/leaflet.css';
 
 import saderatPic from '@/asset/images/sadbank.png'
 import newsPic from '@/asset/images/news.png'
+
+
+
+
 export default function Home() {
 
 
@@ -34,7 +38,7 @@ export default function Home() {
         </div>
 
 
-        <section className='About md:flex md:flex-row-reverse md:justify-around md:items-end pb-12 pt-8'>
+         <section className='About md:flex md:flex-row-reverse md:justify-around md:items-end pb-12 pt-8'>
           <div className=''>
 
             <p className='text-[20px] text-black font-semibold pb-1 p-3 md:mx-16'>:الگوریتم ، پیشگام در دنیای داده و هوش مصنوعی</p>
@@ -50,7 +54,14 @@ export default function Home() {
           <div className=' pl-2 pt-4 p-3 '>
             <Btn href='./about'>بیشتر بخوانید</Btn>
           </div>
-        </section>
+        </section> 
+
+
+
+
+
+
+
 
 
         <section className='Service  md:px-16 py-8 bg-[#f9fafa]'>
@@ -126,7 +137,61 @@ export default function Home() {
             </div>
           </div>
           
-        </section>
+        </section> 
+ 
+
+
+
+
+
+          {/* <section className="Algoritm pt-12 bg-white max-w-5xl mx-auto px-6 md:px-12">
+  <div className="md:mr-10 mb-10">
+    <h2 className="font-bold text-3xl text-[#1B3B5F] pb-2">چرا الگوریتم</h2>
+    <div className="flex justify-end items-center mb-6">
+      <div className="w-4 h-4 bg-[#6FABC2] rotate-45 -ml-1 md:hidden"></div>
+      <div className="w-28 h-1 rounded-l-xl bg-[#6FABC2]"></div>
+    </div>
+  </div>
+
+  <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+    <p>ما در الگوریتم، به دنبال ایجاد دنیایی هوشمندتر از طریق بهره‌گیری عمیق از قدرت داده و هوش مصنوعی هستیم.</p>
+    <p>باور ما بر این است که داده، به‌عنوان منبعی حیاتی، می‌تواند زمینه‌ساز تحول در تصمیم‌گیری، بهینه‌سازی فرآیندها و خلق ارزش‌های نوآورانه برای سازمان‌ها باشد.</p>
+    <p>هدف ما، ارائه‌ی راهکارهایی انعطاف‌پذیر، هوشمند و مقیاس‌پذیر است که به سازمان‌ها و نهادهای مالی کمک کند تا در محیط پویای امروز با پیچیدگی‌های روزافزون، تغییرات سریع فناوری و رقابت شدید، بهترین عملکرد ممکن را داشته باشند.</p>
+  </div>
+
+  <div className="mt-12 flex flex-col md:flex-row md:justify-between gap-10">
+    {[
+      {
+        title: "تخصص",
+        desc: "تیم متخصص و مجرب در زمینه داده و هوش مصنوعی و سابقه اثبات شده در ارائه راه‌حل‌های موفق",
+      },
+      {
+        title: "نوآوری",
+        desc: "استفاده از جدیدترین فناوری‌های هوش مصنوعی و ارائه راه‌حل‌های خلاقانه و متناسب با نیازهای شما",
+      },
+      {
+        title: "تعهد",
+        desc: "همکاری با شما در تمام مراحل پروژه و ارائه پشتیبانی و خدمات پس از فروش",
+      },
+    ].map(({ title, desc }) => (
+      <div key={title} className="flex flex-row-reverse items-start gap-4 max-w-sm">
+        <div className="w-12 h-12 rounded-full bg-[#6FABC2] flex items-center justify-center text-white shadow-md flex-shrink-0">
+          <Check size={24} />
+        </div>
+        <div>
+          <h3 className="font-semibold text-xl text-[#1B3B5F] mb-1">{title}</h3>
+          <p className="text-gray-600">{desc}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+ */}
+
+
+
+
 
 
         <section className='News pt-8'>
@@ -142,6 +207,7 @@ export default function Home() {
           <div className=' gap-10 p-3 md:flex md:justify-center'>
             <News img={saderatPic} />
             <News img={newsPic} />
+            <News img={saderatPic} />
           </div>
 
         </section>

@@ -255,7 +255,7 @@ function Service() {
                     <ServiceCard/>
                     
 
-                <section className=" pt-7">
+                {/* <section className=" pt-7">
                     <div>
                         <h6 className=" font-bold text-xl text-black pb-1 p-3 text-right">سوالات متداول</h6>
                         <div className="flex justify-end items-center mb-5">
@@ -265,7 +265,32 @@ function Service() {
                     </div>
 
                     <Accordion />
-                </section>
+                </section> */}
+
+
+
+
+
+
+
+
+
+                <section className="pt-12 pb-16 bg-gray-50">
+  <div className="max-w-4xl mx-auto px-4">
+    <div className="text-right mb-6">
+      <h2 className="text-2xl font-extrabold text-[#1B3B5F]">سوالات متداول</h2>
+      <div className="flex justify-end items-center mt-2">
+        <div className="w-3 h-3 bg-[#6FABC2] rotate-45 -ml-1 md:hidden "></div>
+        <div className="w-32 h-1 rounded-s-xl bg-[#6FABC2]"></div>
+      </div>
+    </div>
+
+    <div className="bg-white rounded-2xl shadow-md p-6 md:p-8">
+      <Accordion />
+    </div>
+  </div>
+</section>
+
 
 
 

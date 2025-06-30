@@ -48,7 +48,7 @@ const partners = [
 export default function PartnersSlider() {
   return (
     <div dir="rtl" className="max-w-5xl mx-auto px-4 py-10">
-      <h2 className="text-2xl font-bold mb-6 text-center">همکاران ما</h2>
+      {/* <h2 className="text-2xl font-bold mb-6 text-center">همکاران ما</h2> */}
 
       <div className="relative ">
         <Swiper
