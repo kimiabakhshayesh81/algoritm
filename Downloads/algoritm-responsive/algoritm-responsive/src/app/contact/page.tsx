@@ -63,7 +63,7 @@
 
 
 
-
+'use client'
 
 
 
@@ -74,7 +74,24 @@ import email from '@/asset/images/email 1.png';
 import Link from "next/link";
 import MapComponent from '../../component/Map/map';
 
+
+import { useState } from "react";
+
 function Contact() {
+
+  const [title , setTitle] = useState('')
+  const [message , setMessage] = useState('')
+
+
+
+   const handleSend = () => {
+    const email = "info@algorithm.co"; // <-- ایمیل شرکت
+    const subject = encodeURIComponent(title);
+    const body = encodeURIComponent(message);
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+  };
+
+
   return (
     <div className="w-full">
       <div className="flex flex-col gap-6 items-center p-6">
@@ -120,6 +137,8 @@ function Contact() {
               className="w-[90%] border-none bg-white h-10 p-2 rounded-[15px]"
               type="text"
               placeholder="عنوان پیام را وارد کنید"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
             />
           </div>
 
@@ -129,13 +148,24 @@ function Contact() {
               id="message"
               className="w-[90%] border-none bg-white h-72 p-2 rounded-[15px] resize-none placeholder:text-start"
               placeholder="پیام خود را در این قسمت نوشته و ارسال کنید..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
-            <Link
+            {/* <Link
               href=""
               className="flex items-center justify-center bg-[#6FABC2] text-white font-bold font-serif rounded-[6px] w-[90%] h-8 mb-3 mt-2"
             >
               ارسال پیام
-            </Link>
+            </Link> */}
+
+
+
+            <button
+          onClick={handleSend}
+          className="flex items-center justify-center bg-[#6FABC2] text-white font-bold font-serif rounded-[6px] w-[90%] h-8 mb-3 mt-2"
+        >
+          ارسال پیام
+        </button>
           </div>
         </div>
 
