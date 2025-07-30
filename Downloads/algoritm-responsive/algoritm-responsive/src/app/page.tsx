@@ -16,6 +16,32 @@ import newsPic from '@/asset/images/news.png'
 
 
 
+const newsList = [
+  
+  
+  {
+    id: '3',
+    img: saderatPic,
+    title: 'خدمات جدید بانک صادرات ایران',
+    content: 'در هفتمین نمایشگاه «تراکنش ایران» دو محصول فناورانه «صاپ» و «سامانه جامع بازاریابی» بانک صادرات با تغییرات و رویکردهای جدید معرفی شدند. به گزارش بازرگانی خبرگزاری مهر به نقل از روابط عمومی بانک صادرات، مراسم افتتاحیه این نمایشگاه با حضور سیدحمید پورمحمدی، معاون اقتصادی سازمان برنامه و بودجه و بنیانگ...'
+  },
+  {
+    id: '2',
+    img: newsPic,
+    title: 'خدمات جدید بانک صادرات ایران',
+    content: 'در هفتمین نمایشگاه «تراکنش ایران» دو محصول فناورانه «صاپ» و «سامانه جامع بازاریابی» بانک صادرات با تغییرات و رویکردهای جدید معرفی شدند. به گزارش بازرگانی خبرگزاری مهر به نقل از روابط عمومی بانک صادرات، مراسم افتتاحیه این نمایشگاه با حضور سیدحمید پورمحمدی، معاون اقتصادی سازمان برنامه و بودجه و بنیانگ...'
+  },
+  {
+    id: '1',
+    img: saderatPic,
+    title: 'خدمات جدید بانک صادرات ایران',
+    content: 'در هفتمین نمایشگاه «تراکنش ایران» دو محصول فناورانه «صاپ» و «سامانه جامع بازاریابی» بانک صادرات با تغییرات و رویکردهای جدید معرفی شدند. به گزارش بازرگانی خبرگزاری مهر به نقل از روابط عمومی بانک صادرات، مراسم افتتاحیه این نمایشگاه با حضور سیدحمید پورمحمدی، معاون اقتصادی سازمان برنامه و بودجه و بنیانگ...',
+  },
+]
+
+
+
+
 
 export default function Home() {
 
@@ -26,7 +52,6 @@ export default function Home() {
 
       <div className="text-right pt-8 ">
         <div className='md:mr-10'>
-
           <div>
             <h1 className="font-bold text-xl text-black pb-1 p-3">داستان ما</h1>
 
@@ -55,12 +80,6 @@ export default function Home() {
             <Btn href='./about'>بیشتر بخوانید</Btn>
           </div>
         </section> 
-
-
-
-
-
-
 
 
 
@@ -138,59 +157,6 @@ export default function Home() {
           </div>
           
         </section> 
- 
-
-
-
-
-
-          {/* <section className="Algoritm pt-12 bg-white max-w-5xl mx-auto px-6 md:px-12">
-  <div className="md:mr-10 mb-10">
-    <h2 className="font-bold text-3xl text-[#1B3B5F] pb-2">چرا الگوریتم</h2>
-    <div className="flex justify-end items-center mb-6">
-      <div className="w-4 h-4 bg-[#6FABC2] rotate-45 -ml-1 md:hidden"></div>
-      <div className="w-28 h-1 rounded-l-xl bg-[#6FABC2]"></div>
-    </div>
-  </div>
-
-  <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
-    <p>ما در الگوریتم، به دنبال ایجاد دنیایی هوشمندتر از طریق بهره‌گیری عمیق از قدرت داده و هوش مصنوعی هستیم.</p>
-    <p>باور ما بر این است که داده، به‌عنوان منبعی حیاتی، می‌تواند زمینه‌ساز تحول در تصمیم‌گیری، بهینه‌سازی فرآیندها و خلق ارزش‌های نوآورانه برای سازمان‌ها باشد.</p>
-    <p>هدف ما، ارائه‌ی راهکارهایی انعطاف‌پذیر، هوشمند و مقیاس‌پذیر است که به سازمان‌ها و نهادهای مالی کمک کند تا در محیط پویای امروز با پیچیدگی‌های روزافزون، تغییرات سریع فناوری و رقابت شدید، بهترین عملکرد ممکن را داشته باشند.</p>
-  </div>
-
-  <div className="mt-12 flex flex-col md:flex-row md:justify-between gap-10">
-    {[
-      {
-        title: "تخصص",
-        desc: "تیم متخصص و مجرب در زمینه داده و هوش مصنوعی و سابقه اثبات شده در ارائه راه‌حل‌های موفق",
-      },
-      {
-        title: "نوآوری",
-        desc: "استفاده از جدیدترین فناوری‌های هوش مصنوعی و ارائه راه‌حل‌های خلاقانه و متناسب با نیازهای شما",
-      },
-      {
-        title: "تعهد",
-        desc: "همکاری با شما در تمام مراحل پروژه و ارائه پشتیبانی و خدمات پس از فروش",
-      },
-    ].map(({ title, desc }) => (
-      <div key={title} className="flex flex-row-reverse items-start gap-4 max-w-sm">
-        <div className="w-12 h-12 rounded-full bg-[#6FABC2] flex items-center justify-center text-white shadow-md flex-shrink-0">
-          <Check size={24} />
-        </div>
-        <div>
-          <h3 className="font-semibold text-xl text-[#1B3B5F] mb-1">{title}</h3>
-          <p className="text-gray-600">{desc}</p>
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
-
- */}
-
-
-
 
 
 
@@ -203,12 +169,21 @@ export default function Home() {
             </div>
           </div>
 
-
+{/* 
           <div className=' gap-10 p-3 md:flex md:justify-center'>
             <News img={saderatPic} />
             <News img={newsPic} />
             <News img={saderatPic} />
-          </div>
+          </div> */}
+
+
+          <div className='gap-10 p-3 md:flex md:justify-center'>
+      {newsList.map((item) => (
+        <News key={item.id} {...item} />
+      ))}
+    </div>
+          
+
 
         </section>
       </div>

@@ -204,7 +204,7 @@ const slides = [
   {
     img: bankPic,
     title: 'سیستم بانکداری',
-    description: 'هوش تجاری، نئوبانک، بانکداری اجتماعی...',
+    description: '...هوش تجاری، نئوبانک، بانکداری اجتماعی',
   },
   {
     img: paytech,
